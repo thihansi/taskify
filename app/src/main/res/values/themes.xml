@@ -9,7 +9,7 @@
 
     <style name="Theme.TaskManagerApp" parent="Base.Theme.TaskManagerApp" />
 
-    <style name="CardViewStyle" parent="Widget.Material3.CardView.Outlined">
+    <style name="CardViewStyle" parent="Widget.Material3.CardView.Filled">
         <item name="shapeAppearanceOverlay">@style/CutShape</item>
     </style>
     <style name="CutShape" parent="ShapeAppearance.Material3.MediumComponent">
