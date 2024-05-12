@@ -13,6 +13,7 @@ import com.example.taskmanagerapp.models.Task
     entities = [Task::class],
     version = 1,
     exportSchema = false
+
 )
 @TypeConverters(TypeConverter::class)
 abstract class TaskDatabase : RoomDatabase() {
