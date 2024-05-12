@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TaskManagerApp</string>
+    <string name="tv_title">Welcome Back</string>
+    <string name="tv_sub_title">Today\'s Task</string>
 </resources>
