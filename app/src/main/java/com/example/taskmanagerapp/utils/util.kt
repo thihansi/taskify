@@ -5,6 +5,18 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import com.google.android.material.textfield.TextInputLayout
 
+enum class Status{
+    SUCCESS,
+    ERROR,
+    LOADING
+}
+
+enum class StatusResult{
+    Added,
+    Updated,
+    Deleted
+}
+
 fun Dialog.setupDialog(layoutResId: Int){
     setContentView(layoutResId)
     window!!.setLayout(
