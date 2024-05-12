@@ -34,5 +34,8 @@ class MainActivity : AppCompatActivity() {
         updateCloseImg.setOnClickListener { updateTaskDialog.dismiss() }
 
 
+        mainBinding.addTaskFABtn.setOnClickListener{
+            addTaskDialog.show()
+        }
     }
 }
