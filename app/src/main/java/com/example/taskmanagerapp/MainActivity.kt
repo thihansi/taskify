@@ -9,15 +9,5 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val count: TextView = findViewById(R.id.number)
-        val button: Button = findViewById(R.id.button)
-        var number = 0
-
-        button.setOnClickListener {
-
-        }
-
-
     }
 }
