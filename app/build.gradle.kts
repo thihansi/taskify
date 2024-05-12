@@ -48,6 +48,12 @@ dependencies {
 
     //Lottie
     implementation ("com.airbnb.android:lottie:6.1.0")
+    implementation("androidx.room:room-common:2.6.1")
+
+    // Room
+    val room_version = "2.5.2"
+    implementation ("androidx.room:room-runtime:$room_version")
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
