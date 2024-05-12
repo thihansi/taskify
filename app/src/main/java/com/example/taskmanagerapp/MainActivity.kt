@@ -7,12 +7,20 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Button
 import android.widget.ImageView
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModelProvider
 import com.example.taskmanagerapp.databinding.ActivityMainBinding
+import com.example.taskmanagerapp.models.Task
+import com.example.taskmanagerapp.utils.clearEditText
+import com.example.taskmanagerapp.utils.hideKeyBoard
 import com.example.taskmanagerapp.utils.setupDialog
 import com.example.taskmanagerapp.utils.validateEditText
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import viewmodels.TaskViewModel
 import java.util.Date
+import java.util.UUID
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -35,6 +43,14 @@ class MainActivity : AppCompatActivity() {
         Dialog(this, R.style.DialogCustomTheme).apply {
             setupDialog(R.layout.loading_dialog)
         }
+    }
+
+    private val taskViewModel: TaskViewModel by lazy {
+        ViewModelProvider(this)[TaskViewModel::class.java]
+    }
+
+    private val isListMutableLiveData = MutableLiveData<Boolean>().apply {
+        postValue(true)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,8 +85,8 @@ class MainActivity : AppCompatActivity() {
         })
 
         mainBinding.addTaskFABtn.setOnClickListener {
-            //clearEditText(addETTitle, addETTitleL)
-            //clearEditText(addETDesc, addETDescL)
+            clearEditText(addETTitle, addETTitleL)
+            clearEditText(addETDesc, addETDescL)
             addTaskDialog.show()
         }
 
@@ -79,16 +95,15 @@ class MainActivity : AppCompatActivity() {
             if (validateEditText(addETTitle, addETTitleL)
                 && validateEditText(addETDesc, addETDescL)
             ) {
-/*
                 val newTask = Task(
-                    //UUID.randomUUID().toString(),
+                    UUID.randomUUID().toString(),
                     addETTitle.text.toString().trim(),
                     addETDesc.text.toString().trim(),
                     Date()
-                ) */
-                //hideKeyBoard(it)
+                )
+                hideKeyBoard(it)
                 addTaskDialog.dismiss()
-                //taskViewModel.insertTask(newTask)
+                taskViewModel.insertTask(newTask)
             }
         }
         // Add task end
