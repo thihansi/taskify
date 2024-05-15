@@ -17,8 +17,10 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingTop="15dp"
             android:orientation="vertical">
 
+            <!--
             <TextView
                 android:id="@+id/welcomeTxt"
                 android:layout_width="wrap_content"
@@ -28,19 +30,38 @@
                 android:text="Welcome Back"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+-->
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="117dp"
+                android:layout_height="56dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="-6dp"
+                android:layout_marginEnd="163dp"
+                android:layout_toStartOf="@+id/linearLayout"
+                app:srcCompat="@drawable/taskify_logo" />
 
             <TextView
                 android:id="@+id/todayTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/welcomeTxt"
+                android:layout_below="@id/imageView"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="4dp"
-                android:text="Today's Task"
-                android:textSize="28sp"
+                android:layout_marginBottom="5dp"
+                android:text="My to do list ✎˖ᝰ✧˖°"
+                android:textSize="16sp"
+                android:textColor="#A41B3B"
                 android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/listOrGridImg"
+                android:layout_width="10dp"
+                android:layout_height="40dp" />
+
             <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_above="@id/edSearchL"
@@ -48,21 +69,20 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="10dp"
-                android:gravity="center"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/sortImg"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_sort" />
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/sort_icon" />
 
                 <ImageView
-                    android:id="@+id/listOrGridImg"
+                    android:id="@+id/listOrGridImg1"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/ic_view_list"
-                    app:tint="@color/black" />
+                    android:src="@drawable/edit_icon_new" />
             </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -74,6 +94,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
                 app:errorEnabled="false"
                 app:hintEnabled="false"
                 app:startIconDrawable="@drawable/ic_search">
@@ -82,8 +103,8 @@
                     android:id="@+id/edSearch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:hint="Enter search title"
+                    android:background="@drawable/search_bar"
+                    android:hint="Search Task"
                     android:imeOptions="actionSearch"
                     android:inputType="text" />
 
@@ -110,14 +131,12 @@
         android:id="@+id/addTaskFABtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
+        android:layout_gravity="bottom|center"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/black"
-        android:text="Add Task"
+        android:backgroundTint="#F1758F"
+        android:text="Add New Task"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:icon="@drawable/ic_add_circle"
-        app:iconSize="25dp"
-        app:iconTint="@color/white" />
+        android:layout_marginBottom="15dp"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

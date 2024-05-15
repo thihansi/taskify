@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginVertical="4dp"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardBackgroundColor="@color/white"
+    app:cardBackgroundColor="@color/brown"
     app:cardElevation="10dp">
 
     <RelativeLayout
@@ -19,7 +19,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="false"
             android:layout_centerVertical="true"
-            android:layout_toStartOf="@id/editDeleteL"
             android:orientation="vertical">
 
             <TextView
@@ -41,37 +40,35 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/dateTxt"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="4dp"
-                android:text="Date"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dateTxt"
+                    android:layout_width="293dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:text="Date"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/editImg"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginVertical="4dp"
+                    android:src="@drawable/edit_icon" />
+
+                <ImageView
+                    android:id="@+id/deleteImg"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginVertical="4dp"
+                    android:src="@drawable/bin_icon" />
+            </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/editDeleteL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/editImg"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginVertical="4dp"
-                android:src="@drawable/ic_edit" />
-
-            <ImageView
-                android:id="@+id/deleteImg"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginVertical="4dp"
-                android:src="@drawable/ic_delete" />
-        </LinearLayout>
     </RelativeLayout>
 
 </com.google.android.material.card.MaterialCardView>

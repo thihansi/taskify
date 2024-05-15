@@ -15,9 +15,9 @@ import com.example.taskmanagerapp.utils.clearEditText
 import com.example.taskmanagerapp.utils.hideKeyBoard
 import com.example.taskmanagerapp.utils.setupDialog
 import com.example.taskmanagerapp.utils.validateEditText
+import com.example.taskmanagerapp.viewmodels.TaskViewModel
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import viewmodels.TaskViewModel
 import java.util.Date
 import java.util.UUID
 

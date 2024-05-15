@@ -1,11 +1,8 @@
-package viewmodels
+package com.example.taskmanagerapp.viewmodels
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.MutableLiveData
-import androidx.room.Query
 import com.example.taskmanagerapp.models.Task
-import com.example.taskmanagerapp.utils.Resource
 import com.example.taskmanagerapp.repository.TaskRepository
 
 class TaskViewModel(application: Application) : AndroidViewModel(application) {
