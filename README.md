@@ -37,6 +37,33 @@ Taskify is an Android application built to manage tasks efficiently. The app all
 - Use the sort button to sort tasks by title or date.
 - Use the search bar to find tasks by title.
 
+
+## Screenshots
+
+
+## Screenshots
+
+Here are some screenshots of the Taskify app in action:
+
+### Splash screen
+  <img src="https://github.com/thihansi/taskify/blob/main/app/src/main/res/drawable/screenShots/screen1.png" width="200">
+
+### Home tcreen in list view
+  <img src="https://github.com/thihansi/taskify/blob/main/app/src/main/res/drawable/screenShots/screen2.png" width="200">
+
+### Home tcreen in grid view
+  <img src="https://github.com/thihansi/taskify/blob/main/app/src/main/res/drawable/screenShots/screen3.png" width="200">
+
+### Add new task
+  <img src="https://github.com/thihansi/taskify/blob/main/app/src/main/res/drawable/screenShots/screen4.png" width="200">
+
+### Update task
+  <img src="https://github.com/thihansi/taskify/blob/main/app/src/main/res/drawable/screenShots/screen5.png" width="200">
+
+### Sort tasks
+  <img src="https://github.com/thihansi/taskify/blob/main/app/src/main/res/drawable/screenShots/screen6.png" width="200">
+
+
 ## License
 This project is licensed under the MIT License.
 
