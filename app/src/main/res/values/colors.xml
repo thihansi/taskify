@@ -2,5 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="mainBackgroundColor">#03FF72</color>
+    <color name="mainBackgroundColor">#fcf6f0</color>
+    <color name="pink_Lace">#FFD5F8</color>
+    <color name="beige">#F4D5CD</color>
+    <color name="brown">#f3decd</color>
+    <color name="green">#C7EBB3</color>
+    <color name="darkbrown">#92664a</color>
+    <color name="blue">#d8f9ff</color>
+
+
 </resources>

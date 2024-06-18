@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="10dp"
-    app:cardBackgroundColor="@color/white">
+    app:cardBackgroundColor="@color/green">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Update Task"
+            android:text="Update Taskk"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -26,7 +26,7 @@
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_margin="8dp"
-            android:src="@drawable/ic_close" />
+            android:src="@drawable/close_icon" />
 
         <View
             android:id="@+id/viewHLine"
@@ -55,7 +55,7 @@
                     android:id="@+id/edTaskTitle"
                     android:layout_width="match_parent"
                     android:layout_height="?actionBarSize"
-                    android:background="#EAE4E8"
+                    android:background="@color/brown"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -71,7 +71,7 @@
                     android:id="@+id/edTaskDesc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#EAE4E8"
+                    android:background="@color/brown"
                     android:gravity="top|start"
                     android:inputType="textMultiLine"
                     android:lines="5"
@@ -85,8 +85,8 @@
                 android:layout_height="?actionBarSize"
                 android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:backgroundTint="@color/black"
-                style="@style/Widget.App.Button.Fill"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/pink_Lace"
                 android:text="Update Task"
                 android:textSize="20sp" />
         </LinearLayout>
